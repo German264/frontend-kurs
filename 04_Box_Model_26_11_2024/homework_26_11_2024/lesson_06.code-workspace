@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../06_new_lesson_28_11_2024/lessons/lesson_06"
+		},
+		{
+			"path": "../../06_new_lesson_28_11_2024/homeworks"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "lesson_06"
+	}
+}

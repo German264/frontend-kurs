@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+    margin: 30px 0;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.button-link {
+    background-color: bisque;
+    text-decoration: none; /* Убираем подчеркивание */
+    color: #000;
+    border: 2px solid #000;    
+    border-radius: 5px; 
+    cursor: pointer;
+    display: inline-block;  /*Позволяет задать размеры, если нужно */
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.insects-gallery {
+    width: 100%;
+    min-height: 850px;
+    /* задаем flex для родителя позиционируемых элементов */
+    display: flex;
+    /* промежуток между flex элементами */
+    gap: 10px;
+    /* центровать flex элементы по главной оси */
+    /* justify-content: center; */
+    /* сместить элементы к правому краю */
+    /* justify-content: end; */
+    /* разделили равномерно свободное пространство между элементами */
+    justify-content: center;
+    /* align-items управляет поведением flex элементов по поперечной оси */
+    align-items: start;
+    /* перенос карточек на новые строки */
+    flex-wrap: wrap;
+    /* отвечает за сгруппированное положение карточек при переносе карточек через flex-wrap */
+    align-content: center;
+  }
+  
+  
+  /* селектор для всех картинки внутри .insects-card */
+  .insects-card > img {
+    max-height: 200px;
+    }
+  
+    /* селектор для контейнера с данными по насекомому */
+  .insects-card {
+    display: flex;
+    /* поменяли направление во flex контейнере (теперь главная ось отвечает за вертикаль) */
+    flex-direction: column;
+    /* если изменен flex-direction на column то align-items управляет горизонталью  */
+    align-items: center;
+    /* если изменен flex-direction на column то justify-content управляет вертикалью  */
+    justify-content: start;
+    height: 390px;
+    width: 350px;
+    background-color: bisque;
+  }
+
+  .description {
+    text-align: left;
+    width: 280px;
+
+  }

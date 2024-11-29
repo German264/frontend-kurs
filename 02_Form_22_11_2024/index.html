@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <style>
+  h1 {
+    text-align: center;
+  }
+</style> -->
+
+    <!-- 
+./ - нужно остаться в той же папке
+../ - нужно выйти во внешнюю папку 
+-->
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Form</title>
+  </head>
+  <!--
+Где будут выбираться элементы стилистики?
+1. Inline-styles (в той же строке где сам элемент)
+2. Отдельный тэг style
+3. Отдельный файл (.css)
+
+С помощью чего будут выбираться элементы стилистики?
+1. С помощью имени тэга
+2. С помощью значения любого атрибута (class, id)
+-->
+  <body>
+    <h1>Signup Form</h1>
+    <form>
+      <!-- Дефолтный блочный элемент div -->
+      <!-- Дефолтный строчный элемент - span -->
+      <div>
+        <label for="name">Name: </label>
+        <input
+          id="name"
+          type="text"
+          placeholder="Enter your name..."
+          required
+        />
+      </div>
+      <br />
+      <div>
+        <label for="email">Email: </label>
+        <input
+          id="email"
+          type="email"
+          placeholder="Enter your email..."
+          required
+        />
+      </div>
+      <br />
+      <div>
+        <label for="username">Username: </label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Enter your username"
+          required
+        />
+      </div>
+      <br />
+      <div>
+        <label for="password">Password: </label>
+        <input
+          id="password"
+          type="password"
+          placeholder="Enter your password..."
+          minlength="8"
+          required
+        />
+      </div>
+      <br />
+      <div>
+        <label for="tel">Phone: </label>
+        <input
+          title="Example: +123-456-7890"
+          id="tel"
+          type="tel"
+          placeholder="Example: +123-456-7890"
+          pattern="\+?[0-9]{3}-?[0-9]{3}-?[0-9]{4}"
+          required
+        />
+      </div>
+      <br />
+      <div>
+        <label for="date">Date: </label>
+        <input id="date" type="date" placeholder="Enter date..." required />
+      </div>
+      <br />
+      <div>
+        <label for="accept-terms"> </label>
+        <input
+          id="accept-terms"
+          type="checkbox"
+          name="terms"
+          value="accepted"
+        />
+        I accept the terms and conditions
+      </div>
+      <br />
+      <div>
+        <label for="male">Male:</label>
+        <input type="radio" name="gender" id="male" value="male" required />
+        <label for="female">Female:</label>
+        <input type="radio" name="gender" id="female" value="female" required />
+      </div>
+      <br />
+      <div>
+        <label for="hobby">Hobby:</label>
+        <select id="hobby" required>
+          <option value="">Choose your hobby:</option>
+          <option value="chess">Chess - best sport from all over word!</option>
+          <option value="Football">
+            Football - best sport from all over word!
+          </option>
+          <option value="Checkers">
+            Checkers - best sport from all over word!
+          </option>
+          <option value="Cycling">
+            Cycling - best sport from all over word!
+          </option>
+          <option value="Running">
+            Running - best sport from all over word!
+          </option>
+          <option value="Running">No in this list</option>
+        </select>
+      </div>
+      <br />
+
+      <div style="display: flex; justify-content: center; gap: 10px">
+      <!-- <button type="reset">Reset</button>
+      <button type="submit">Finish</button>-->
+        <button class="reset" type="reset">Reset!</button>
+        <button class="submit" type="submit">Finish!</button>
+      </div>
+    </form>
+  </body>
+</html>

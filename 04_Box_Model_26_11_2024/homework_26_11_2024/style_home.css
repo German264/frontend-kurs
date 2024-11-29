@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/** {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}*/
+
+body { 
+  position: relative; /* Это важно для позиционирования псевдоэлемента */
+  padding: 60px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  background-image: url("https://remont-sk.ru/wp-content/uploads/coffee.jpg");
+  background-size: cover; /* Растянуть на весь экран по длине или ширине */
+  background-position: center;
+}
+
+body::before {
+    content: ""; /* Создаём слой */
+    position: absolute; /* Позволяет растянуть слой */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: -1; /* Позади основного содержимого */
+  }
+
+h1 {
+  margin: 60px;
+  text-align: center;
+  font-size: 3em;
+  color: #714c4c;
+}
+
+h2 {
+    color: #714c4c;
+  }
+
+.container {
+  display: flex;
+  justify-content: space-between; /* Распределяет колонки */
+}
+
+.left,
+.right {
+  width: 50%; /* Ширина каждой колонки (можно настроить) */
+  padding: 20px;
+  box-sizing: border-box; /* Учитывает отступы в ширине */
+}

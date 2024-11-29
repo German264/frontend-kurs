@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap");
+
+body {
+  font-family: "Covered By Your Grace", cursive;
+  font-weight: 400;
+  font-style: normal;
+
+  background-image: url("https://remont-sk.ru/wp-content/uploads/74ccffb06f33848597c0347baa73065a-scaled.jpg");
+  background-size: cover; /* Растянуть на весь экран */
+  background-position: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4em;
+  color: #fff;
+}
+
+form {
+  width: 80%;
+  margin: 2% auto 0; /* 1. по вертикали  2. по горизонтали*/
+  max-width: 400px;
+  padding: 20px; /* Отступы со всех сторон*/
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  /*Настройка тени:
+    1.По Х ( положительное вправо, отрицательное влево)
+    2.По У ( положительное вниз, отрицательное вверх)
+    3.Размытие тени (rgba)
+    4.Цвет тени*/
+  box-shadow: 10px 10px 30px rgba(216, 160, 160, 0.5);
+  font-size: 1.2em;
+  color: #fff;
+  background-color: rgb(102, 56, 48);
+}
+
+button {
+  /* font-size: 2em; 
+  background-color: rgb(201, 2, 2);
+  border: 1px solid #ccc;    
+  border-radius: 5px; 
+  color: #fff;*/
+
+  cursor: pointer;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 2px;
+}
+.reset {
+  background-color: #f44336;
+}
+.submit {
+  background-color: #4caf50;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 0 5px 5px; /* Начиная сверху и по часовой стрелке */
+}
