@@ -9,6 +9,7 @@ body {
 
 .header {
     margin: 40px 0;
+    padding: 0px 30px;
     display: flex;
     gap: 10px;
     justify-content: center;

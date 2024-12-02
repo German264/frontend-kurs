@@ -1,3 +1,133 @@
-a {
-    color: #000;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  /* vh - viewport height - высота видимой области браузера */
+  min-height: 100vh;
+  background-position: center;
+  background-image: url(https://optim.tildacdn.net/tild3930-3664-4062-a137-313437316361/-/format/webp/florian-wehde-1uWanm.jpg);
+  background-size: cover;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+}
+
+header {
+  /* vw - viewport width - ширина видимой области браузера */
+  /* width: 80vw; */
+  /* 'приклеиваем' элемент на страницу с помощью position sticky  */
+  position: sticky;
+  /* не забываем добавить значение в пикселях для одной из координат чтобы sticky сработал ( top / left / right / bottom ) */
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 30px;
+  gap: 15px;
+  height: 80px;
+  background-color: rgb(184, 7, 7);
+}
+
+h2 {
+  color: rgb(184, 7, 7);
+  -webkit-text-stroke: 2px rgb(255, 255, 255);
+  font-weight: 800;
+  font-size: 3.5em;
+}
+
+h3 {
+  color: rgb(255, 255, 255);
+  font-size: 1.5em;
+}
+
+nav {
+  display: flex;
+  gap: 15px;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 0px 30px;
+  /* настройка для flex элемента, чтобы он растянулся по размеру  контейнера родителя */
+  flex: 1;
+  margin: 60px;
+}
+
+.lesson-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.lesson-container a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 70px;
+  background-color: #f8f8f8;
+  box-shadow: 3px 15px 15px 2px #00000070;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.lesson-container a:hover {
+  background-color: rgb(184, 7, 7);
+  color: #ffffff;
+  text-decoration: none;
+  box-shadow: -3px -10px 15px 0px #00000070;
+  transition: transform 2s ease;
+}
+
+footer {
+  height: 60px;
+  background-color: #1b1b1b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 30px;
+  gap: 15px;
+}
+
+/* эти css свойства сработают на экранах меньше 669px по ширине */
+@media (max-width: 768px) {
+  header {
+    background-color: rgb(88, 9, 9);
+  }
+
+  .grid-gallery div {
+    height: 170px;
+  }
+}
+
+/* эти css свойства сработают на экранах меньше 464px по ширине */
+@media (max-width: 430px) {
+  header {
+    background-color: rgb(224, 28, 28);
+  }
+
+  .grid-gallery div {
+    height: 200px;
+  }
 }
