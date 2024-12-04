@@ -1,0 +1,16 @@
+button {
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    margin: 100px 10px;
+  }
+  
+  #magic-btn-2 {
+    background-color:  #a78b71;
+    color: white;
+  }
+  
+  #magic-btn {
+    background-color: #dff75a;
+    color: #f50808;
+  }
