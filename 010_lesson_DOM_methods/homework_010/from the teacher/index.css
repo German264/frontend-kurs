@@ -1,0 +1,33 @@
+/* * {
+  box-sizing: border-box;
+} */
+
+#magic-btn {
+    background-color: #f7c815;
+    color: white;
+    font-size: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+  }
+  
+  .second-btn {
+    font-size: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    border: none;
+    padding: 15px;
+  }
+  
+  #text {
+    font-size: 30px;
+    margin: 20px;
+  }
+  
+  /* .box {
+    height: 200px;
+    width: 200px;
+    padding: 50px;
+    background-color: lightcoral;
+  } */
