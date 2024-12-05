@@ -1,5 +1,4 @@
 const btn = document.querySelector("#magic-btn");
-document.body.appendChild(btn);
 btn.addEventListener("click", () => {
   let newElement = document.createElement("button");
   newElement.setAttribute("id", "magic-btn-2"); // Устанавливаем id
