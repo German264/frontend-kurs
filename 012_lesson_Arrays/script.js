@@ -19,3 +19,8 @@ console.log("длинна массива arr1: ", length)
 
 let lastElement = arr1[arr1.length - 1]
 console.log(lastElement)
+
+for (let i = 0; i < fruits.length; i++) {
+    const element = array[i];
+    
+}
