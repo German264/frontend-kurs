@@ -43,6 +43,7 @@ h2 {
   -webkit-text-stroke: 2px rgb(255, 255, 255);
   font-weight: 800;
   font-size: 3.5em;
+  margin: 70px 0 20px;
 }
 
 h3 {
@@ -55,6 +56,8 @@ h4 {
   -webkit-text-stroke: 2px rgb(255, 255, 255);
   font-weight: 800;
   font-size: 2.5em;
+  margin: 70px 0 20px;
+
 }
 
 nav {
