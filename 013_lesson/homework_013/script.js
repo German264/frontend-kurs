@@ -21,7 +21,7 @@ debitCard.deposit = function (sum) {
 };
 
 debitCard.withdraw = function (sum) {
-  if (this.balance >= sum) {
+  if (this.balance >= sum && sum > 0) {
     this.balance = this.balance - sum;
     console.log(`Списано со счета: ${sum}`);
   }else {
@@ -34,5 +34,5 @@ debitCard.checkBalance = function () {
 };
 
 debitCard.deposit(5000);
-debitCard.withdraw(6000);
+debitCard.withdraw(2000);
 debitCard.checkBalance();
