@@ -1,0 +1,55 @@
+form {
+  width: 50%;
+}
+.input_box {
+  width: 50%;
+}
+.input_box input {
+  border: 2px solid #2c3e50;
+  padding: 5px;
+}
+.input_box input:focus{
+  outline: 0;
+}
+#form_save {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  position: absolute;
+} /* - скрываем чекбокс*/
+
+#form_save + label {
+  display: inline-block;
+  width: 52px;
+  height: 26px;
+  border-radius: 26px;
+  background-color: #95a5a6;
+  transition: background 0.5s;
+  position: relative;
+}
+/* #form_save:focus + label {
+  border: 1px solid #2c3e50;
+  margin: -1px;
+} */
+
+#form_save:checked + label {
+  /*	width: 100px;
+	height: 100px;
+	color: green;- цвет полосы*/
+  background-color: #27ae60;
+}
+
+#form_save + label:after {
+  content: "";
+  width: 22px;
+  height: 22px;
+  background-color: white;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  transition: left 0.5s;
+}
+#form_save:checked + label:after {
+  left: 28px;
+}
