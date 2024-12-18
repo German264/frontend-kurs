@@ -1,4 +1,22 @@
 async function fetchLocation() {
+  const loader = document.getElementById("loader");
+  const weatherContainer = document.getElementById("weather-container");
+
+  // Показать лоадер
+  function showLoader() {
+    loader.classList.remove("hidden"); // Показываем лоадер
+    weatherContainer.classList.add("hidden"); // Скрываем контейнер с погодой
+  }
+
+  // Скрыть лоадер
+  function hideLoader() {
+    loader.classList.add("hidden"); // Скрываем лоадер
+    weatherContainer.classList.remove("hidden"); // Показываем контейнер с погодой
+  }
+
+  // Имитация загрузки данных
+  showLoader(); // Показываем лоадер
+
   // Запрос к API для определения местоположения
   const response = await fetch("https://get.geojs.io/v1/ip/geo.json");
   const locationData = await response.json();
@@ -14,6 +32,10 @@ async function fetchLocation() {
 
   // Запрос к API для получения погоды
   await fetchWeather(latitude, longitude);
+
+  setTimeout(() => {
+    hideLoader(); // Скрываем лоадер через 3 секунды
+  }, 3000);
 }
 
 async function fetchWeather(latitude, longitude) {
